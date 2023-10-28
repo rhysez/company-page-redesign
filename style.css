@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@200;300;400&family=Work+Sans:wght@300;400;500;600&display=swap');
 
+/* Thanks for giving me this opportunity! - Rhys */
+
 :root {
     /* Global variables and general colour scheme for the challenge */
     --page-background: #ECECEC;
@@ -56,6 +58,7 @@ body {
 
 .developer-page {
     font-family: var(--font-family-2);
+    font-weight: 300;
     margin: 0;
     padding: 0;
 }
@@ -285,5 +288,58 @@ a {
     .blog-card-grid {
         grid-template-columns: repeat(1, 30rem);
         grid-template-rows: repeat(8, 20rem);
+    }
+}
+
+/* Footer */
+
+#page-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--page-light);
+    margin-top: 10%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.page-footer-list {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    font-size: 1.5rem;
+    font-family: var(--font-family-2);
+    font-weight: 200;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: 1rem;
+}
+
+.footer-social-media {
+    display: flex;
+    justify-content: center;
+    margin-right: 10%;
+    gap: 2.5rem;
+}
+
+.social-media-icon-footer {
+    max-width: 2rem;
+}
+
+@media (max-width: 700px) {
+    #page-footer {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .page-footer-list {
+        flex-direction: column;
+        text-align: center;
+        font-size: 2rem;
+        margin: 0;
+    }
+
+    .footer-social-media {
+        margin: 0;
     }
 }
