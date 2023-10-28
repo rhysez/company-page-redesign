@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@200;400&family=Work+Sans:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@200;300;400&family=Work+Sans:wght@300;400;500;600&display=swap');
 
 :root {
     /* Global variables and general colour scheme for the challenge */
@@ -195,5 +195,95 @@ a {
 }
 
 .social-media-icon {
-    max-width: 4rem;
+    max-width: 3rem;
+}
+
+/* Blog */
+
+.blog-title, .blog-subtitle {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.blog-title {
+    font-family: var(--font-family-1);
+    font-size: 4rem;
+    font-weight: 400;
+    margin-top: 6rem;
+}
+
+.blog-subtitle {
+    font-family: var(--font-family-2);
+    font-size: 2rem;
+    font-weight: 300;
+    margin-top: 1rem;
+}
+
+.blog-card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 30rem);
+    grid-template-rows: repeat(4, 20rem);
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 4rem;
+}
+
+.blog-card {
+    background-color: var(--page-light);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #494949;
+}
+
+.blog-card-header {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    gap: 1rem;
+}
+
+.blog-card-header-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--page-dark);
+}
+
+.blog-card-main {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.blog-card-main-title {
+    font-family: var(--font-family-1);
+    font-weight: 400;
+    font-size: 2.5rem;
+    padding: 0;
+    margin: 0;
+}
+
+.blog-card-main-subtitle {
+    font-family: var(--font-family-2);
+    font-weight: 400;
+    font-size: 1.15rem;
+    margin: 0;
+}
+
+.blog-card-footer {
+    font-family: var(--font-family-2);
+    font-weight: 400;
+    font-size: 1.05;
+    text-align: center;
+    margin-top: 1.25rem;
+}
+
+@media (max-width: 700px) {
+    .blog-card-grid {
+        grid-template-columns: repeat(1, 30rem);
+        grid-template-rows: repeat(8, 20rem);
+    }
 }
